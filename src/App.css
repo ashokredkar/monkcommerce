@@ -1,22 +1,25 @@
 *{ margin: 0; padding: 0; box-sizing: border-box; border: none; font-family: 'Poppins', sans-serif; }
-#root{ display: flex; justify-content: center; background-color: #f4f4f4; height: 100vh; padding: 40px; }
+#root{ display: flex; justify-content: center; background-color: #f4f4f4; min-height: 100vh; padding: 40px; }
 ::-webkit-scrollbar { width: 4px; }
 ::-webkit-scrollbar-track { background: #ddd; }
 ::-webkit-scrollbar-thumb { background: #222; }
 h2, h3{ font-weight: 500; color: #222; }
 h2{ margin-bottom: 20px;}
-.btn{ padding: 10px 30px; font-size: 15px; background-color: #222; color: #fff; cursor: pointer; width: 50%; }
+.btn{ padding: 10px 30px; font-size: 15px; background-color: #222; color: #fff; cursor: pointer; width: 25%; }
 section{ width: 100vw; }
 .list_header{ display: flex; align-items: center; }
-.list_header h3{ width: 50%; padding-left: 25px; }
+.list_header h3{ width: 25%; padding-left: 25px; }
+.list_header h3:first-child{ width: 73%; }
 .main, .variants > div{ display: flex; gap: 5px; align-items: center; }
-.discount_section{ display: flex;  align-items: center; width: 50%; }
+.discount_section{ display: flex;  align-items: center; width: 25%; }
 .discount_section :is(input, select){ width: 50%; padding: 10px; font-size: 15px; background-color: #fff; color: #222; border: 1px solid #ddd; outline: none; }
-.product_input{ display: flex; align-items: center; justify-content: space-between; width: 50%; padding: 10px; font-size: 15px; background-color: #fff; color: #222; border: 1px solid #ddd; outline: none; }
+.product_input{ display: flex; align-items: center; justify-content: space-between; width: 75%; padding: 10px; font-size: 15px; background-color: #fff; color: #222; border: 1px solid #ddd; outline: none; }
 .variant_section{ padding-left: 40px; display: flex; flex-direction: column; gap: 8px; align-items: flex-end; }
+.variant_section > span{ cursor: pointer; font-size: 14px; font-weight: 600; text-decoration: underline; user-select: none; }
 .variants{ width: 100%; }
 .remove_item, .drag_icon, .edit_icon, .close_modal{ font-size: 20px; cursor: pointer; }
-.item{ padding-bottom: 20px; border-bottom: 1px solid #ddd; margin-bottom: 20px; }
+.item{ padding-bottom: 20px; border-bottom: 1px solid #aaa; margin-bottom: 20px; }
+.no_items{ padding: 40px 20px; border-radius: 5px; background-color: #fff; color: #222; margin: 10px 0 30px 0; }
 
 .modal{ position: fixed; top: 50%; left: 50%; translate: -50% -50%; background-color: #fff; width: 70vw; height: 80vh; padding: 20px; box-shadow: 0 0 0 1000px #00000080; }
 .modal .header{ display: flex; align-items: center; justify-content: space-between; }
